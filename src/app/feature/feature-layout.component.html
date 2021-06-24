@@ -1,0 +1,11 @@
+<header style="background-color:teal;height: 100px;">
+  <h1>Can Load</h1>
+</header>
+<ng-container *ngIf="isAdmin; else general">
+  <app-admin-list></app-admin-list>
+</ng-container>
+<ng-template #general>
+  <app-general-list></app-general-list>
+</ng-template>
+<footer style="background-color:grey;height: 100px;">
+</footer>
